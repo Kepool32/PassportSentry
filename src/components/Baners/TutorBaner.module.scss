@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+    format("ttf");
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/Rubik/Rubik-Italic-VariableFont_wght.ttf")
+    format("ttf");
+}
+.tutor {
+  height: 610px;
+  width: 578px;
+  margin: 100px 0 0 0;
+
+  .tutorHeading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #5e66a7;
+
+    .tutorItem {
+      width: 129px;
+      height: 42px;
+      background-color: #5e66a7;
+      color: #fefeff;
+      padding: 4px 15px 4px 15px;
+      border-radius: 4px;
+    }
+  }
+  .featureItem {
+    width: 320px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #5e66a7;
+    background-color: #e7e7ff66;
+    border-radius: 4px;
+  }
+  .featureItem:nth-child(1) {
+    transform: rotate(-5deg);
+  }
+  .featureItem:nth-child(2) {
+    transform: rotate(5deg);
+    margin-left: 257px;
+    margin-top: 40px;
+  }
+  .featuresContainer {
+    margin-top: 60px;
+  }
+  .featureText {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #5e66a7;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .tutor {
+    display: none;
+  }
+}

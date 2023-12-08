@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+    format("ttf");
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/Rubik/Rubik-Italic-VariableFont_wght.ttf")
+    format("ttf");
+}
+.footer {
+  background: #5e66a7;
+  height: 310px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  .footerTitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .footerList {
+    list-style: none;
+  }
+  .footerItem {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  .footerMarkMobile {
+    display: none;
+  }
+  .Logo {
+    margin-top: 30px;
+  }
+
+  .companyInfo {
+    color: #fefeff;
+    margin-top: 20px;
+  }
+  .footerLang {
+    display: flex;
+    flex-direction: row;
+    margin-top: -16px;
+  }
+
+  .footerMore {
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: right;
+  }
+  .footerItemEmail {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    margin-left: 40px;
+  }
+  .footerMarkItem {
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    margin-left: 39px;
+    position: absolute;
+    bottom: 0;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+
+    .Logo {
+      margin-left: 25px;
+    }
+    .companyInfo {
+      margin: 0;
+    }
+    .footerList {
+      display: none;
+    }
+    .footerMarkItem {
+      display: none;
+    }
+    .footerMarkMobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-top: 20px;
+
+      .footerMarkMobileItem {
+        font-family: "Rubik", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #fefeff;
+        margin: 5px 0px 0px 40px;
+      }
+    }
+  }
+}

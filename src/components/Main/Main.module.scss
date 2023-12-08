@@ -1,0 +1,12 @@
+.main {
+  height: 65%;
+  min-height: 550px;
+  margin-bottom: 61px;
+  padding: 0 10%;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0;
+  }
+}

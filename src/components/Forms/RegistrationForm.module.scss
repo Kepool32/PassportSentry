@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+    format("ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/Rubik/Rubik-Italic-VariableFont_wght.ttf")
+    format("ttf");
+}
+
+.form {
+  display: flex;
+}
+.heading1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.heading3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.radioBut {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.radioButItem {
+  margin-right: 15px;
+}
+.span {
+  color: #5e66a7;
+}
+.formGroupRadio {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.RegistButton {
+  width: 380px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 100px;
+  gap: 10px;
+  text-align: center;
+  background: #5e66a7;
+  color: #f7f7f8;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  border: 1px solid #fefeff;
+  margin-top: 30px;
+}
+.RegistButton:hover {
+  background: #f8f2f2;
+  color: #5e66a7;
+  border: 1px solid #5e66a7;
+}
+.additionalLinks {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.forgotPasswordLink {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #a1a1a1;
+}
+.AuthLink {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #5e66a7;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.registrationForm {
+  box-shadow: 3px 12px 24px 0px #8189c533;
+  padding: 50px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 131px;
+
+  .AuthText {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .AuthTextData {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  .input {
+    width: 380px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #a1a1a1;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .spanError{
+    color: red;
+    margin-bottom: 5px;
+  }
+}

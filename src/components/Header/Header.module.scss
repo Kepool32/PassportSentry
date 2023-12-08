@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/Rubik/Rubik-Italic-VariableFont_wght.ttf")
+    format("ttf");
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 130px;
+  border-bottom-width: 1px;
+  border-color: #000000;
+  background-color: #fefeff;
+  box-shadow: 0px 8px 20px 0px #c9cfff33;
+
+  .logo {
+    margin-right: 70px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+
+    .menuItem {
+      margin-right: 20px;
+      text-decoration: none;
+
+      .menuText {
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+    }
+  }
+  .additionalButtons {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+
+    .burger {
+      display: none;
+    }
+
+    .switcher {
+      font-family: "Rubik", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0px;
+      text-align: right;
+      color: #a1a1a1;
+      border: none;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    .loginButton {
+      padding: 10px 20px;
+      border-radius: 100px;
+      border: 2px solid #5e66a7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #5e66a7;
+      font-family: "Rubik", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0px;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    .loginButton:hover {
+      background-color: #5e66a7;
+      color: white;
+    }
+    .AuthLink {
+      text-decoration: none;
+    }
+    .AuthLink:visited {
+      color: inherit;
+    }
+    .registrationButton {
+      width: 201px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      gap: 10px;
+      background: #5e66a7;
+      font-family: "Rubik", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #fefeff;
+      cursor: pointer;
+      border: 1px solid #fefeff;
+      text-decoration: none;
+    }
+
+    .registrationButton:hover {
+      background-color: #f7f7f8;
+      color: #5e66a7;
+      border: 1px solid #5e66a7;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 64px;
+    padding: 0 20px;
+    justify-content: space-between;
+
+    .menu {
+      display: none;
+    }
+    .butItems {
+      display: flex;
+    }
+
+    .burger {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+    }
+    .burger span {
+      position: absolute;
+      width: 18px;
+      height: 1px;
+      background-color: #5e66a7;
+    }
+
+    .burger span:nth-child(1) {
+      transform: translateY(6px);
+    }
+    .burger span:nth-child(2) {
+      transform: translateY(12px);
+    }
+    .burger span:nth-child(3) {
+      transform: translateY(18px);
+    }
+    .switcher {
+      margin-right: 0;
+    }
+
+    .loginButton {
+      position: absolute;
+      top: 84px;
+      left: 20px;
+      margin-right: 44px;
+    }
+
+    .registrationButton {
+      position: absolute;
+      top: 84px;
+      right: 0;
+      margin-right: 20px;
+    }
+  }
+}
