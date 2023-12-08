@@ -3,7 +3,7 @@ import styles from "./RegistrationForm.module.scss";
 import TutorBanner from "../Baners/TutorBanner";
 import { useAppDispatch } from "../../hooks/redux";
 import { RegistrationUser } from "../../store/reducers/ActionCreators";
-import {FieldValues, SubmitHandler, useForm} from "react-hook-form";
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { useAuth } from "../../hooks/use-auth";
 import { Navigate } from "react-router-dom";
 import Loader from "../Loader/Loader";
@@ -57,7 +57,9 @@ const RegistrationFrom: FC = () => {
               })}
             />
             {errors?.email && (
-              <span className={styles.spanError}>{errors?.firstName?.message as ReactNode}</span>
+              <span className={styles.spanError}>
+                {errors?.firstName?.message as ReactNode}
+              </span>
             )}
           </div>
           <div className={styles.formGroup}>
@@ -69,7 +71,9 @@ const RegistrationFrom: FC = () => {
               })}
             />
             {errors?.email && (
-              <span className={styles.spanError}>{errors?.lastName?.message as ReactNode}</span>
+              <span className={styles.spanError}>
+                {errors?.lastName?.message as ReactNode}
+              </span>
             )}
           </div>
           <div className={styles.formGroup}>
@@ -86,7 +90,9 @@ const RegistrationFrom: FC = () => {
               })}
             />
             {errors?.email && (
-              <span className={styles.spanError}>{errors?.dateOfBirth?.message as ReactNode}</span>
+              <span className={styles.spanError}>
+                {errors?.dateOfBirth?.message as ReactNode}
+              </span>
             )}
           </div>
           <div className={styles.formGroup}>
@@ -102,7 +108,9 @@ const RegistrationFrom: FC = () => {
               })}
             />
             {errors?.email && (
-              <span className={styles.spanError}>{errors?.email?.message as ReactNode}</span>
+              <span className={styles.spanError}>
+                {errors?.email?.message as ReactNode}
+              </span>
             )}
           </div>
           <div className={styles.formGroup}>
@@ -129,7 +137,9 @@ const RegistrationFrom: FC = () => {
               })}
             />
             {errors?.password && (
-              <span className={styles.spanError}>{errors?.password?.message as ReactNode}</span>
+              <span className={styles.spanError}>
+                {errors?.password?.message as ReactNode}
+              </span>
             )}
           </div>
           <div className={styles.formGroup}>
@@ -144,7 +154,9 @@ const RegistrationFrom: FC = () => {
               })}
             />
             {errors.confirmPassword && (
-              <span className={styles.spanError}>{errors.confirmPassword.message as ReactNode}</span>
+              <span className={styles.spanError}>
+                {errors.confirmPassword.message as ReactNode}
+              </span>
             )}
           </div>
           <div className={styles.formGroupRadio}>
@@ -179,7 +191,7 @@ const RegistrationFrom: FC = () => {
             </a>
           </div>
         </div>
-        <Loader/>
+        <Loader />
       </form>
     </div>
   );

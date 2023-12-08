@@ -1,13 +1,12 @@
 import React, { FC, ReactNode } from "react";
 import styles from "./AuthorizationForm.module.scss";
 import TutorBanner from "../Baners/TutorBanner";
-import {FieldValues, SubmitHandler, useForm} from "react-hook-form";
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { useAppDispatch } from "../../hooks/redux";
 import { AuthorizationUser } from "../../store/reducers/ActionCreators";
 import { useAuth } from "../../hooks/use-auth";
 import { Navigate } from "react-router-dom";
 import Loader from "../Loader/Loader";
-
 
 const AuthorizationForm: FC = () => {
   const {
@@ -19,7 +18,7 @@ const AuthorizationForm: FC = () => {
   const dispatch = useAppDispatch();
   const { isAuth } = useAuth();
 
-  const onSubmit: SubmitHandler<FieldValues>= (data) => {
+  const onSubmit: SubmitHandler<FieldValues> = (data) => {
     dispatch(
       AuthorizationUser({
         email: data.email,
@@ -28,12 +27,10 @@ const AuthorizationForm: FC = () => {
       }),
     );
     reset();
-
   };
   if (isAuth) {
     return <Navigate to="/user" />;
   }
-
 
   return (
     <div className={styles.form}>
@@ -55,7 +52,11 @@ const AuthorizationForm: FC = () => {
               },
             })}
           />
-          {errors?.email && <span className={styles.spanError}>{errors?.email?.message as ReactNode}</span>}
+          {errors?.email && (
+            <span className={styles.spanError}>
+              {errors?.email?.message as ReactNode}
+            </span>
+          )}
         </div>
         <div className={styles.formGroup}>
           <span className={styles.AuthTextData}>Пароль</span>
@@ -71,7 +72,9 @@ const AuthorizationForm: FC = () => {
             })}
           />
           {errors?.password && (
-            <span className={styles.spanError}>{errors?.password?.message as ReactNode}</span>
+            <span className={styles.spanError}>
+              {errors?.password?.message as ReactNode}
+            </span>
           )}
         </div>
 
@@ -88,7 +91,7 @@ const AuthorizationForm: FC = () => {
             </a>
           </div>
         </div>
-        <Loader/>
+        <Loader />
       </form>
     </div>
   );

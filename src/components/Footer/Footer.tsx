@@ -6,7 +6,7 @@ const Footer: FC = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.Logo}>
-        <img src={logo} alt="logo"/>
+        <img src={logo} alt="logo" />
       </div>
       <div className={styles.companyInfo}>
         <h3 className={styles.footerTitle}>О компании</h3>
@@ -89,7 +89,9 @@ const Footer: FC = () => {
         </div>
       </div>
       <div className={styles.footerMarkMobile}>
-        <a className={styles.footerMarkMobileItem} href="#">Условия использования</a>
+        <a className={styles.footerMarkMobileItem} href="#">
+          Условия использования
+        </a>
         <a className={styles.footerMarkMobileItem} href="#">
           Политика конфиденциальности
         </a>

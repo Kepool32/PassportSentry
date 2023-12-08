@@ -6,7 +6,7 @@ const Header: FC = () => {
   return (
     <div className={styles.header}>
       <div className={styles.logo}>
-        <img src={logo} alt="logo"/>
+        <img src={logo} alt="logo" />
       </div>
       <div className={styles.menu}>
         <a className={styles.menuItem} href="#">
